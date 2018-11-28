@@ -1,0 +1,42 @@
+From Backend Team
+
+API
+
+Get All orders
+
+GET request to /api/Orders
+Sample Response:
+[
+{
+  id: 1,
+  name: 'Jeronimo',
+  drink: 'Coffee'
+},
+{
+  id: 2,
+  name: 'Sara',
+  drink: 'Latte'
+}
+]
+---------------
+Add an Order
+
+POST request to /api/orders
+Type: JSON
+
+Sample Post:
+{
+  name: 'Palma',
+  drink: 'Tea'
+}
+
+Sample Response:
+{
+id:3,
+name:'Palma',
+drink: 'Tea'
+}
+
+==============
+Delete an Order
+DELETE request to /api/orders/{id}
