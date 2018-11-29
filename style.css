@@ -1,0 +1,7 @@
+u li .edit{
+  display: none;
+}
+
+u li.edit .edit{
+  display: initial;
+}

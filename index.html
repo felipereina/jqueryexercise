@@ -10,6 +10,22 @@
   <body>
     <h2>Coffee Orders</h2>
     <ul id="orders">
+      <template id="order-template">
+        <li data-id = {{id}}>
+        <p>Name:
+          <span class= "noedit">{{name}</span>
+          <input class="edit name"/>
+        }</p>
+        <p>Drink:
+          <span class = "noedit">{{drink}}</span>
+          <input class="edit drink"/>
+        </p>
+        <button data-id = '{{id}}' class = 'remove'>Delete</button>
+        <button class = 'editOrder noedit'>Edit</button>
+        <button class= "saveEdit edit">Save</button>
+        <button class = 'cancelEdit edit'>Cancel</button>
+        </li>
+      </template>
 
     </ul>
 
